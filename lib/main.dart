@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     var question = [
-      'What\'s your favorite color',
+      'What is your favorite color',
       'What is your favorite animal'
     ];
     return MaterialApp(
@@ -37,15 +37,15 @@ class _MyAppState extends State<MyApp> {
             Question(
               question.elementAt(_questionIndex),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Answer 1'),
               onPressed: _answerQuestion,
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Answer 2'),
               onPressed: () => print('Answer 2 chosen'),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Answer 3'),
               onPressed: () {
                 print('Answer 3 chosen');
